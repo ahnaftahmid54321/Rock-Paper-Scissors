@@ -10,19 +10,23 @@ const playerThem = getComputerChoice();
 if (playerMe === playerThem) {
     console.log("It's a Tie");
 }
-else if (/*PlayerMe is "Rock" and PlayerThem is "Scissors"*/
-    playerMe = "Rock" && playerThem = "Scissors"
-    console.log("You Win!!"));
-
-else if (/*PlayerMe is "Scissors" and PlayerThem is "Rock")*/
-    playerMe = "Scissors" && playerThem = "Rock"
-    console.log("You Lose"));
-
-else if (/*PlayerMe is "Paper" and PlayerThem is "Scissors")*/
-    playerMe = "Paper" && playerThem = "Scissors"
-    console.log("You Lose"));
-
-else if (/*PlayerMe is "Rock" and PlayerThem is "Scissors")*/
-    playerMe = "Scissors" && playerThem = "Scissors"
-    console.log("You Lose"));
-
+/*PlayerMe is "Rock" and PlayerThem is "Scissors"*/
+else if (playerMe === "Rock" && playerThem === "Scissors") { 
+    console.log("You Win!!");
+}
+/*PlayerMe is "Scissors" and PlayerThem is "Rock")*/
+else if (playerMe === "Scissors" && playerThem === "Rock") {
+    console.log("You Lose");
+}
+/*PlayerMe is "Paper" and PlayerThem is "Scissors")*/
+else if (playerMe === "Paper" && playerThem === "Scissors") {
+    console.log("You Lose");
+}
+/*PlayerMe is "Rock" and PlayerThem is "Scissors")*/
+else if (playerMe === "Scissors" && playerThem === "Scissors") {
+    console.log("You Lose");
+}
+/*PlayerMe is "Scissors" and PlayerThem is "Rock")*/
+else if (playerMe === "Scissors" && playerThem === "Rock") {
+    console.log("You Lose");
+}
