@@ -4,15 +4,10 @@ function getComputerChoice() {
     console.log(choices[index]);
     return choices[index];
 } 
-const playerMe = prompt("Type Rock, Paper or Scissors");
-const playerThem = getComputerChoice();
-console.log("Me:", playerMe, "Them:", playerThem);
-
 function playRound() {
     const playerMe = prompt("Type Rock, Paper or Scissors");
     const playerThem = getComputerChoice();
     console.log("Me:", playerMe, "Them:", playerThem);
-}
 if (playerMe === playerThem) {
     console.log("It's a Tie");
 }
@@ -43,4 +38,5 @@ else if (playerMe === "Scissors" && playerThem === "Paper") {
 const again = prompt("Play again? (yes/no)");
 if (again && again.toLowerCase() === "yes") {
 playRound();
+} 
 }
